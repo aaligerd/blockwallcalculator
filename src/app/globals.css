@@ -10,6 +10,10 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --color-masonry-light: #F5F2F0;
+  --color-masonry-dark: #1E293B;
+  --color-masonry-brick: #A84430;
+  --color-utility-action: #2F80ED;
 }
 
 @media (prefers-color-scheme: dark) {
