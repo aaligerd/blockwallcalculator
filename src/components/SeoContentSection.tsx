@@ -118,6 +118,33 @@ export default function SeoContentSection() {
               Typically, you will need about 3 to 4 bags of mortar mix (80 lbs each) per 100 standard 8"x8"x16" blocks, assuming a standard 3/8" mortar joint.
             </p>
           </div>
+
+          <div className="pt-6">
+            <h3 className="text-lg font-bold text-slate-900 dark:text-zinc-100 mb-2">
+              How much concrete or grout is required to fill a standard 8x8x16 concrete block?
+            </h3>
+            <p className="text-slate-600 dark:text-zinc-400 leading-relaxed">
+              A standard 8"x8"x16" CMU has a core volume of approximately 0.25 cubic feet. For solid-grouted walls, you will need approximately 1 to 1.1 cubic yards of grout per 100 blocks. If vertical cores are filled at 16" on-center spacing, you will need about half that amount (~0.5 to 0.55 cubic yards per 100 blocks). Always add a 10% to 15% waste margin to cover spills and pipe leakage.
+            </p>
+          </div>
+
+          <div className="pt-6">
+            <h3 className="text-lg font-bold text-slate-900 dark:text-zinc-100 mb-2">
+              How do you estimate the cost of a concrete block wall?
+            </h3>
+            <p className="text-slate-600 dark:text-zinc-400 leading-relaxed">
+              Estimating block wall costs requires summing materials (blocks, mortar, core fill grout, and reinforcement steel) and labor. Standard 8" blocks typically cost $2.00 to $3.50 each. Mortar bags cost around $7.00 to $10.00 each. Labor cost represents the largest variable, usually ranging from $10.00 to $18.00 per square foot depending on height and region.
+            </p>
+          </div>
+
+          <div className="pt-6">
+            <h3 className="text-lg font-bold text-slate-900 dark:text-zinc-100 mb-2">
+              Can I save or download my block wall estimation results?
+            </h3>
+            <p className="text-slate-600 dark:text-zinc-400 leading-relaxed">
+              Yes! You can instantly copy the text summary to your clipboard or download a fully styled PDF contractor report of your block, mortar, grout, and cost estimates.
+            </p>
+          </div>
         </div>
       </section>
     </article>

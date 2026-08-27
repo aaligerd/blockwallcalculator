@@ -5,11 +5,11 @@ import SeoContentSection from "@/components/SeoContentSection";
 import SchemaMarkup from "@/components/SchemaMarkup";
 
 export const metadata: Metadata = {
-  title: "Professional Concrete Block Wall Calculator & Estimator",
-  description: "Calculate required CMU, cinder, or concrete blocks for walls instantly. Reactive input layout optimized for modern construction and DIY projects.",
+  title: "Concrete Block Wall Calculator (with PDF Report)",
+  description: "Calculate required CMU, cinder, or concrete blocks for walls instantly. Estimate grout fill volumes, material costs, and export a professional PDF report.",
   openGraph: {
-    title: "Concrete Block Wall Calculator | Professional CMU Estimator",
-    description: "Calculate required CMU, cinder, or concrete blocks for walls instantly. Reactive input layout optimized for modern construction and DIY projects.",
+    title: "Concrete Block Wall Calculator (with PDF Report)",
+    description: "Calculate required CMU, cinder, or concrete blocks for walls instantly. Estimate grout fill volumes, material costs, and export a professional PDF report.",
     url: "https://blockwallcalculator.com",
     siteName: "Block Wall Calculator",
     images: [
