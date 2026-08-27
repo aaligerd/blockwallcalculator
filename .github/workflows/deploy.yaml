@@ -1,4 +1,4 @@
-name: Deploy update of  BlockWall Calculator
+name: Deploy update of BlockWall Calculator
 
 on:
   push:
@@ -13,14 +13,13 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Deploy via SSH
-        uses: appleboy/ssh-action@v1.0.3
+        uses: appleboy/ssh-action@v1.2.0
         with:
-          host: ${{secrets.SSH_HOST}}
-          username: ${{secrets.SSH_USER}}
-          key: ${{secrets.SSH_PRV_KEY}}
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRV_KEY }}
           script: |
             cd /home/projects/tools/blockwallcalculator/blockwallcalculator
             git pull
             npm install
             npm run build
-    
