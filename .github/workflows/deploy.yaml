@@ -20,6 +20,7 @@ jobs:
           key: ${{ secrets.SSH_PRV_KEY }}
           script: |
             cd /home/projects/tools/blockwallcalculator/blockwallcalculator
+            git stash
             git pull
             npm install
             npm run build
