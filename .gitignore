@@ -16,7 +16,11 @@
 # next.js
 /.next/
 /out/
+
+# userdata
 /gsc
+/gsc_data
+gap_keywords.csv
 
 # production
 /build

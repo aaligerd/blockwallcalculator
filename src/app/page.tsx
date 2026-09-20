@@ -5,11 +5,11 @@ import SeoContentSection from "@/components/SeoContentSection";
 import SchemaMarkup from "@/components/SchemaMarkup";
 
 export const metadata: Metadata = {
-  title: "Concrete Block Wall Calculator (with PDF Report)",
-  description: "Calculate required CMU, cinder, or concrete blocks for walls instantly. Estimate grout fill volumes, material costs, and export a professional PDF report.",
+  title: "Concrete Block Wall Calculator & Estimator | How Many Blocks Do I Need?",
+  description: "Calculate required concrete blocks, cinder blocks, or CMUs for walls instantly. Estimate mortar bags, pallet counts, grout fill, and download a free PDF contractor report.",
   openGraph: {
-    title: "Concrete Block Wall Calculator (with PDF Report)",
-    description: "Calculate required CMU, cinder, or concrete blocks for walls instantly. Estimate grout fill volumes, material costs, and export a professional PDF report.",
+    title: "Concrete Block Wall Calculator & Estimator | Professional CMU Tool",
+    description: "Calculate required concrete blocks, cinder blocks, or CMUs for walls instantly. Estimate mortar bags, pallet counts, grout fill, and download a free PDF contractor report.",
     url: "https://blockwallcalculator.com",
     siteName: "Block Wall Calculator",
     images: [
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
         url: "https://d1yr7ysliv0ys4.cloudfront.net/site-content/blockwall_og_image_new.webp",
         width: 1200,
         height: 630,
-        alt: "Block Wall Calculator & Estimator Tool",
+        alt: "Concrete Block Wall Calculator & Estimator Tool",
       },
     ],
     locale: "en_US",
@@ -28,16 +28,20 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <SchemaMarkup />
+      <SchemaMarkup
+        applicationName="Concrete Block Wall Calculator"
+        applicationDescription="Calculate required concrete blocks, cinder blocks, or CMUs for walls instantly. Estimate mortar bags, pallet counts, and grout fill."
+        url="https://blockwallcalculator.com"
+      />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 space-y-12 w-full flex-1">
         {/* Hero Section */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <h1 className="text-4xl sm:text-5xl font-black text-slate-900 dark:text-zinc-50 tracking-tight leading-none">
-            Professional Concrete <span className="text-masonry-brick">Block Wall</span> Calculator
+            Concrete Block <span className="text-masonry-brick">Wall Calculator</span> & Estimator
           </h1>
-          <p className="text-lg text-slate-655 dark:text-zinc-400 max-w-2xl mx-auto leading-relaxed">
-            Instantly calculate required CMU, cinder, or concrete blocks for walls. Real-time reactive estimations with precision buffers for professional contractors and DIY builds.
+          <p className="text-lg text-slate-600 dark:text-zinc-400 max-w-2xl mx-auto leading-relaxed">
+            Instantly calculate how many concrete blocks you need for any wall, retaining structure, or foundation. Includes precision waste margins, mortar bags, pallet counts, and core grout estimation.
           </p>
         </div>
 

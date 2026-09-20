@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useSyncExternalStore } from "react";
 
 interface BlockOption {
   id: string;
@@ -12,9 +12,9 @@ interface BlockOption {
 
 const BLOCK_SIZES: BlockOption[] = [
   { id: "8x8x16", name: '8"x8"x16" Standard', nominalSize: "8\" x 8\" x 16\"", sqFt: 0.8888, coreVolume: 0.25 },
-  { id: "4x8x16", name: '4"x8"x16" Slim', nominalSize: "4\" x 8\" x 16\"", sqFt: 0.4444, coreVolume: 0.0 }, // Slim blocks are solid
-  { id: "6x8x16", name: '6"x8"x16" Medium', nominalSize: "6\" x 8\" x 16\"", sqFt: 0.6666, coreVolume: 0.16 },
-  { id: "12x8x16", name: '12"x8"x16" Heavy Structural', nominalSize: "12\" x 8\" x 16\"", sqFt: 1.3333, coreVolume: 0.40 },
+  { id: "4x8x16", name: '4"x8"x16" Slim Partition', nominalSize: "4\" x 8\" x 16\"", sqFt: 0.8888, coreVolume: 0.0 }, // 4" partition blocks cover 8x16 face
+  { id: "6x8x16", name: '6"x8"x16" Medium Structural', nominalSize: "6\" x 8\" x 16\"", sqFt: 0.8888, coreVolume: 0.17 },
+  { id: "12x8x16", name: '12"x8"x16" Heavy Foundation', nominalSize: "12\" x 8\" x 16\"", sqFt: 0.8888, coreVolume: 0.39 },
 ];
 
 const CORE_SPACING_OPTIONS = [
@@ -57,12 +57,11 @@ export default function BlockCalculatorEngine({
 
   // UI state
   const [copied, setCopied] = useState<boolean>(false);
-  const [mounted, setMounted] = useState<boolean>(false);
-
-  // Prevent hydration mismatches by tracking mount state
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+  const mounted = useSyncExternalStore(
+    () => () => {},
+    () => true,
+    () => false
+  );
 
   const blockInfo = BLOCK_SIZES.find((b) => b.id === selectedBlock) || BLOCK_SIZES[0];
   const surfaceArea = length * height;
