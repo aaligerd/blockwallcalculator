@@ -2,6 +2,7 @@ import React from "react";
 import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
 import Script from "next/script";
+import TopSponsorBanner from "@/components/TopSponsorBanner";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -141,6 +142,9 @@ export default function RootLayout({
           </div>
         </header>
 
+        {/* Top Sponsor Banner Slot */}
+        <TopSponsorBanner />
+
         {/* Page Content */}
         <div className="flex-1 flex flex-col">{children}</div>
 
@@ -200,6 +204,11 @@ export default function RootLayout({
               <div className="space-y-3">
                 <h3 className="text-white font-bold tracking-wide uppercase text-xs">Company &amp; Support</h3>
                 <ul className="space-y-2">
+                  <li>
+                    <Link href="/advertise" className="text-amber-400 hover:text-amber-300 font-semibold transition-colors flex items-center gap-1.5">
+                      <span>✦</span> Advertise With Us ($3/day)
+                    </Link>
+                  </li>
                   <li>
                     <Link href="/about" className="hover:text-white transition-colors">About Us</Link>
                   </li>
