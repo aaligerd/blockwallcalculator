@@ -16,6 +16,11 @@ export default function ContactPage() {
         <h1 className="text-4xl font-black text-slate-900 dark:text-zinc-50 tracking-tight">
           Contact <span className="text-masonry-brick">Us</span>
         </h1>
+          <div className="flex justify-center pt-2">
+            <a href="https://launchbuff.com/products/block-wall-calculator-rn3p6a" target="_blank" rel="noopener noreferrer" title="Featured on LaunchBuff">
+              <img src="https://launchbuff.com/badge-featured-dark.svg" alt="Featured on LaunchBuff" width="256" height="80" />
+            </a>
+          </div>
         <p className="text-lg text-slate-600 dark:text-zinc-400 max-w-lg mx-auto leading-relaxed text-center">
           Have questions about calculations, structural specs, or suggestions to improve our calculator? We&apos;d love to hear from you.
         </p>

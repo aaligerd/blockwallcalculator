@@ -50,7 +50,6 @@ export default function TopSponsorBanner() {
               {sponsor.desktopBannerUrl ? (
                 /* Standard Image Creative (728x90 desktop / mobile responsive) */
                 <div className="w-full flex items-center justify-center max-h-[90px] overflow-hidden rounded-lg">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={sponsor.desktopBannerUrl}
                     alt={sponsor.altText || sponsor.name}

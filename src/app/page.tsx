@@ -40,6 +40,11 @@ export default function Home() {
           <h1 className="text-4xl sm:text-5xl font-black text-slate-900 dark:text-zinc-50 tracking-tight leading-none">
             Concrete Block <span className="text-masonry-brick">Wall Calculator</span> & Estimator
           </h1>
+          <div className="flex justify-center pt-2">
+            <a href="https://launchbuff.com/products/block-wall-calculator-rn3p6a" target="_blank" rel="noopener noreferrer" title="Featured on LaunchBuff">
+              <img src="https://launchbuff.com/badge-featured-dark.svg" alt="Featured on LaunchBuff" width="256" height="80" />
+            </a>
+          </div>
           <p className="text-lg text-slate-600 dark:text-zinc-400 max-w-2xl mx-auto leading-relaxed">
             Instantly calculate how many concrete blocks you need for any wall, retaining structure, or foundation. Includes precision waste margins, mortar bags, pallet counts, and core grout estimation.
           </p>

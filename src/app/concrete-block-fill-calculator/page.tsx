@@ -54,6 +54,11 @@ export default function ConcreteBlockFillCalculatorPage() {
           <h1 className="text-4xl sm:text-5xl font-black text-slate-900 dark:text-zinc-50 tracking-tight leading-none">
             Concrete Block Fill & <span className="text-masonry-brick">Core Grout</span> Calculator
           </h1>
+          <div className="flex justify-center pt-2">
+            <a href="https://launchbuff.com/products/block-wall-calculator-rn3p6a" target="_blank" rel="noopener noreferrer" title="Featured on LaunchBuff">
+              <img src="https://launchbuff.com/badge-featured-dark.svg" alt="Featured on LaunchBuff" width="256" height="80" />
+            </a>
+          </div>
           <p className="text-lg text-slate-600 dark:text-zinc-400 max-w-2xl mx-auto leading-relaxed">
             Calculate the exact volume of concrete grout required to fill hollow cells in concrete and cinder blocks. Accurately estimates cubic yards and 80lb ready-mix bags with vertical spacing parameters.
           </p>

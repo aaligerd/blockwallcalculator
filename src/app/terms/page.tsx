@@ -14,6 +14,11 @@ export default function TermsPage() {
         <h1 className="text-4xl font-black text-slate-900 dark:text-zinc-50 tracking-tight">
           Terms & <span className="text-masonry-brick">Conditions</span>
         </h1>
+          <div className="flex justify-center pt-2">
+            <a href="https://launchbuff.com/products/block-wall-calculator-rn3p6a" target="_blank" rel="noopener noreferrer" title="Featured on LaunchBuff">
+              <img src="https://launchbuff.com/badge-featured-dark.svg" alt="Featured on LaunchBuff" width="256" height="80" />
+            </a>
+          </div>
         <p className="text-sm text-slate-500 dark:text-zinc-500">
           Last Updated: July 2026
         </p>

@@ -54,6 +54,11 @@ export default function MortarCalculatorPage() {
           <h1 className="text-4xl sm:text-5xl font-black text-slate-900 dark:text-zinc-50 tracking-tight leading-none">
             Mortar <span className="text-masonry-brick">Mix</span> Calculator & Bag Estimator
           </h1>
+          <div className="flex justify-center pt-2">
+            <a href="https://launchbuff.com/products/block-wall-calculator-rn3p6a" target="_blank" rel="noopener noreferrer" title="Featured on LaunchBuff">
+              <img src="https://launchbuff.com/badge-featured-dark.svg" alt="Featured on LaunchBuff" width="256" height="80" />
+            </a>
+          </div>
           <p className="text-lg text-slate-600 dark:text-zinc-400 max-w-2xl mx-auto leading-relaxed">
             Quickly estimate required 80 lb and 60 lb bags of premixed mortar, Portland cement, and sand for any concrete block, CMU, or brick wall. Includes ASTM C270 Type S, N, and M guidance.
           </p>
